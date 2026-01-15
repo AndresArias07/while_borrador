@@ -1,0 +1,287 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.main{
+    margin-top: 95px;
+}
+.profile-photo {
+    width: 55px;
+}
+
+.card-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    max-height: 500px;
+
+}
+.card-post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.2);
+}
+
+.text-post {
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.photo-post {
+    border-radius: 20px;
+    border: 1px solid gray;
+    width: 150px;
+}
+
+/* Iconos */
+/* like icon start */
+.container-icon input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container-icon {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 100ms;
+    width: fit-content;
+}
+
+.checkmark {
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+}
+
+.container-icon input:checked~.checkmark path {
+    fill: #FF5353;
+    stroke-width: 0;
+}
+
+.container-icon input:checked~.checkmark {
+    animation: like_effect 400ms ease;
+}
+
+
+
+@keyframes like_effect {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dislike_effect {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* like icon end */
+/* comment icon start */
+.container-icon-comment input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container-icon-comment {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 120ms;
+    width: fit-content;
+
+}
+
+.checkmark-comment {
+
+    width: 28px;
+    transition: 150ms ease;
+    animation: comment_idle 250ms ease;
+
+}
+
+.container-icon-comment input:checked~.checkmark-comment path {
+    fill: #4A90E2;
+    stroke-width: 0;
+}
+
+.container-icon-comment input:checked~.checkmark-comment {
+    animation: comment_grow 280ms ease-out;
+
+}
+
+@keyframes comment_grow {
+    0% {
+        transform: scale(0.85);
+        opacity: 0.7;
+    }
+
+    60% {
+        transform: scale(1.08);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes comment_idle {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* comment icon end */
+/* save icon start */
+.container-icon-save input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container-icon-save {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 120ms;
+    width: fit-content;
+
+}
+
+.checkmark-save {
+
+    width: 28px;
+    transition: 150ms ease;
+    animation: save_idle 250ms ease;
+
+}
+
+.container-icon-save input:checked~.checkmark-save path {
+    fill: #ffe865;
+    stroke-width: 0;
+}
+
+.container-icon-save input:checked~.checkmark-save {
+    animation: save_grow 280ms ease-out;
+
+}
+
+@keyframes save_grow {
+    0% {
+        transform: scale(0.85);
+        opacity: 0.7;
+    }
+
+    60% {
+        transform: scale(1.08);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes save_idle {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* save icon end */
+
+/*menu-post start*/
+.menu-post {
+    position: fixed;
+    top: 0;
+    width: 900px;
+    z-index: 1050;
+    /* por encima de todo */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* semitransparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.mini-menu .nav-tabs {
+    border-bottom: none;
+    justify-content: center;
+}
+
+.mini-menu .nav-link {
+    color: #ccc;
+    font-weight: normal;
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+}
+
+.mini-menu .nav-link.active {
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+.nav-tabs .nav-link.active {
+    background-color: #270228 !important;
+    color: #fff !important;
+    border-radius: 10px;
+}
+
+/*menu-post end*/
