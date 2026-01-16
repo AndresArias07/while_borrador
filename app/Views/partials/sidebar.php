@@ -1,7 +1,7 @@
-<div class="d-flex flex-column bg-light vh-100 p-3" style="width: 250px;">
+<div class="d-flex side-bar position-fixed flex-column bg-light vh-100 p-4" >
   <!-- Logo o título -->
   <div class="mb-4">
-    <h4 class="fw-bold">while.</h4>
+    <img src="<?= base_url('img/logo-while/while.png') ?>" alt="logo_while">
   </div>
   <!-- Menú principal -->
   <ul class="nav flex-column mb-4">
