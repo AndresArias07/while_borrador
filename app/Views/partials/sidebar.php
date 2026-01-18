@@ -1,50 +1,86 @@
-<div class="d-flex side-bar position-fixed flex-column bg-light vh-100 p-4" >
-  <!-- Logo o título -->
-  <div class="mb-4">
-    <img src="<?= base_url('img/logo-while/while.png') ?>" alt="logo_while">
+<aside class="d-flex position-fixed sidebar flex-column  border-end bg-white">
+  <div class="container-fluid d-flex container-img align-items-end">
+    <img src="<?= base_url('img/logo-while/while.png') ?>" alt="logo-while" class="img-fluid logo-img">
   </div>
-  <!-- Menú principal -->
-  <ul class="nav flex-column mb-4">
-    <li class="nav-item mb-2">
-      <a href="#" class="nav-link d-flex align-items-center text-dark">
-        <i class="bi bi-house me-2"></i> Inicio
+  <ul class="nav nav-pills sidebar-menu flex-column mb-auto gap-4 fs-5 mt-5">
+    <li class="nav-item">
+      <a href="#" class="nav-link active d-flex align-items-center gap-4">
+        <!-- Inicio -->
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 11.5L12 4L21 11.5" />
+          <path d="M5.5 10.5V20H18.5V10.5" />
+        </svg>
+        Inicio
       </a>
     </li>
-    <li class="nav-item mb-2">
-      <a href="#" class="nav-link d-flex align-items-center text-dark position-relative">
-        <i class="bi bi-chat me-2"></i> Mensajes
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          5
-        </span>
+
+    <li>
+      <a href="#" class="nav-link d-flex align-items-center justify-content-between ">
+        <div class="d-flex align-items-center gap-4">
+          <!-- Mensajes -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+          Mensajes
+        </div>
+        <span class="badge bg-primary rounded-pill">5</span>
       </a>
     </li>
-    <li class="nav-item mb-2">
-      <a href="#" class="nav-link d-flex align-items-center text-dark">
-        <i class="bi bi-diagram-3 me-2"></i> Explorar
+
+    <li>
+      <a href="#" class="nav-link d-flex align-items-center gap-4">
+        <!-- Explorar -->
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <polygon points="10 10 16 8 14 14 8 16" />
+        </svg>
+        Explorar
       </a>
     </li>
-    <li class="nav-item mb-2">
-      <a href="#" class="nav-link d-flex align-items-center text-dark">
-        <i class="bi bi-bell me-2"></i> Notificaciones
+
+    <li>
+      <a href="#" class="nav-link d-flex align-items-center gap-4">
+        <!-- Notificaciones -->
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+          <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+        </svg>
+        Notificaciones
       </a>
     </li>
-    <li class="nav-item mb-2">
-      <a href="#" class="nav-link d-flex align-items-center text-dark">
-        <i class="bi bi-plus-circle me-2"></i> Crear
+
+    <li>
+      <a href="#" class="nav-link d-flex align-items-center gap-4">
+        <!-- Crear -->
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="5" y1="12" x2="19" y2="12" />
+        </svg>
+        Crear
       </a>
     </li>
   </ul>
 
-  <!-- Usuarios en línea -->
-  <div class="mt-auto">
-    <h6 class="text-muted mb-3">En línea</h6>
-    <div class="d-flex align-items-center mb-2">
-      <img src="alberto.jpg" class="rounded-circle me-2" width="32" height="32" alt="Alberto">
-      <span>Alberto De la rosa</span>
+  <hr>
+
+  <div class="d-flex flex-column h-25 gap-4">
+    <div class="container-fluid">
+      <h6 class="fs-6 fw-bold mb-3 ">En Línea</h6>
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <img src="<?= base_url('/img/sidebar-down/alberto.png') ?>" class="rounded-circle" width="48" height="48" alt="Alberto">
+        <span class="online" >Alberto De la rosa</span>
+        <span class="bg-success rounded-circle" style="width: 8px; height: 8px;"></span>
+      </div>
     </div>
-    <div class="d-flex align-items-center">
-      <img src="westcol.jpg" class="rounded-circle me-2" width="32" height="32" alt="WestCol">
-      <span>WestCol <span class="text-muted">@laPamper</span></span>
+    <div class="d-flex align-items-center gap-2">
+      <img src="<?= base_url('/img/sidebar-down/westcol.png') ?>" class="rounded-circle" width="70" height="70" alt="WestCol">
+      <span class="bg-success rounded-circle" style="width: 8px; height: 8px;"></span>
+      <span>WestCol <small class="text-muted">@laPamper</small></span>
     </div>
   </div>
-</div>
+</aside>
