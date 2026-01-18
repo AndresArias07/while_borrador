@@ -4,6 +4,7 @@
 
 <body>
     <?= $this->include('partials/sidebar') ?>
+    <?= $this->include('partials/sidebar-history') ?>
 
     <main class="container-fluid">
         <?= $this->renderSection('content') ?>
