@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-end">
-    <div class="historia-container d-flex flex-column ">
+    <div class="historia-container d-flex flex-column bottom-0">
         
         <h1 class="mb-2 d-flex justify-content-center title-history">Historias</h1>
 
@@ -21,6 +21,16 @@
                 <img src="img/historias/paisaje.jpg" alt="paisajeee" class="image-history">
                 <button class="ver-btn">Ver</button>
             </div>
+            
+            <div class="historia-card">
+                <div class="perfil">
+                    <img src="img/post/feid1.png" alt="avatar" >
+                </div>
+                <img src="img/historias/paisaje3.jpg" alt="paisajeee" class="image-history">
+                <button class="ver-btn">Ver</button>
+            </div>
+
+
             <div class="flecha ms-4">&rarr;</div>
         </div>
 
