@@ -142,6 +142,7 @@
                 <!-- save icon end -->
             </div>
         </div>
+        <?= $this->include("partials/sugerencias.php") ?>
     </div>
 
     <!-- Repite estructura con otros datos -->
