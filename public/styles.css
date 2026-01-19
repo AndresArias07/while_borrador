@@ -3,9 +3,10 @@
 }
 
 
-.main{
+.main {
     margin-top: 95px;
 }
+
 .profile-photo {
     width: 55px;
 }
@@ -20,13 +21,14 @@
     max-height: 500px;
 
 }
+
 .card-post {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-post:hover {
     transform: translateY(-5px);
-    box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
 .text-post {
@@ -250,7 +252,7 @@
 .menu-post {
     position: fixed;
     top: 0;
-    width: 900px;
+    width: 100vw;
     z-index: 1050;
     /* por encima de todo */
     backdrop-filter: blur(10px);
@@ -278,11 +280,99 @@
     font-weight: bold;
     border: none;
 }
+
 .nav-tabs .nav-link.active {
     background-color: #270228 !important;
     color: #fff !important;
     border-radius: 10px;
 }
 
+
 /*menu-post end*/
 
+/*start sidebar-history*/
+.historia-container {
+    position: fixed;
+    bottom: 20px;
+    width: 25%;
+    padding: 15px 15px 0px 30px;
+    border-radius: 20px 0 0 0;
+    box-shadow: -5px -5px 12px rgba(0, 0, 0, 0.3); 
+    z-index: 1000;
+}
+
+.title-history{
+    font-weight: bold;
+}
+
+.historia-card {
+    width: 100px;
+    height: 140px;
+    border-radius: 15px;
+    background-color: #e9ecef;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.historia-card:hover {
+    width: 250px;
+    height: 200px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4); 
+}
+
+
+.image-history{
+    width: 100%;
+    height: 100%;
+}
+
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    border: 2px solid #fd8080;
+    transition: 0.5s;
+}
+
+.historia-card:hover .perfil {
+    width: 67px;
+    height: 67px;
+    top: 5px;   /* Ajuste opcional */
+    left: 5px;  /* Ajuste opcional */
+}
+
+
+.perfil img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.ver-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.flecha {
+    font-size: 24px;
+    color: #333;
+    align-self: center;
+    cursor: pointer;
+}
+
+/*end sidebar-history*/
