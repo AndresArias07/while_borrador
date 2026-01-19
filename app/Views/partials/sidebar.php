@@ -68,19 +68,21 @@
 
   <hr>
 
-  <div class="d-flex flex-column h-25 gap-4">
+  <div class="d-flex flex-column h-25 gap-1">
     <div class="container-fluid">
       <h6 class="fs-6 fw-bold mb-3 ">En Línea</h6>
       <div class="d-flex align-items-center gap-2 mb-2">
         <img src="<?= base_url('/img/sidebar-down/alberto.png') ?>" class="rounded-circle" width="48" height="48" alt="Alberto">
-        <span class="online" >Alberto De la rosa</span>
+        <span class="online">Alberto De la rosa</span>
         <span class="bg-success rounded-circle" style="width: 8px; height: 8px;"></span>
       </div>
     </div>
-    <div class="d-flex align-items-center gap-2">
+    <div class="mb-3 d-flex align-items-center gap-2 profile-sidebar ">
       <img src="<?= base_url('/img/sidebar-down/westcol.png') ?>" class="rounded-circle" width="70" height="70" alt="WestCol">
-      <span class="bg-success rounded-circle" style="width: 8px; height: 8px;"></span>
-      <span>WestCol <small class="text-muted">@laPamper</small></span>
+      <div class="d-flex flex-column">
+        <span class="fw-bold fs-5">WestCol</span>
+        <small class="text-muted fs-6">@laPamper</small>
+      </div>
     </div>
   </div>
 </aside>

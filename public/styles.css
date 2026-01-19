@@ -386,8 +386,24 @@
 }
 /* enlinea end */
 
+/* profile side-bar start*/
+.profile-sidebar{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 700px;
+    max-height: 500px;
+    transition: all 0.3s ease;
+}   
+.profile-sidebar:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
 
 
+/* profile side-bar end */
 
 
 /* side-bar end  */
