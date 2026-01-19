@@ -1,9 +1,9 @@
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
-<div class="ms-5 ps-5 ">
-    <?= $this->include("partials/menu-post.php") ?>
-    <div class="container-fluid main d-flex flex-column justify-content-center align-items-center">
+<?= $this->include("partials/menu-post.php") ?>
+<div class="main">
+    <div class="container-fluid  d-flex flex-column justify-content-center ">
         <!-- post1 -->
         <div class="card card-post p-4 mt-5 gap-3 ">
             <!-- Header del post -->
@@ -143,6 +143,9 @@
             </div>
         </div>
     </div>
+
     <!-- Repite estructura con otros datos -->
 </div>
+<?= $this->include('partials/sidebar-history') ?>
+
 <?= $this->endSection() ?>
