@@ -1,0 +1,13 @@
+.sugerencia {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    z-index: 1050;
+    /* por encima de todo */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* semitransparente */
+    box-shadow: 0 4px 4px rgba(20, 20, 20, 0.1);
+    border-bottom-left-radius: 20px;
+}
