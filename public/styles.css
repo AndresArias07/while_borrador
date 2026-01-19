@@ -295,9 +295,9 @@
     position: fixed;
     bottom: 20px;
     width: 25%;
+    padding: 15px 15px 0px 30px;
     border-radius: 20px 0 0 0;
     box-shadow: -5px -5px 12px rgba(0, 0, 0, 0.3); 
-    padding: 20px 20px 0px 50px;
     z-index: 1000;
 }
 
@@ -307,10 +307,10 @@
 
 .historia-card {
     width: 100px;
-    height: 180px;
+    height: 140px;
     border-radius: 15px;
     background-color: #e9ecef;
-    margin-left: 10px;
+    margin-left: 15px;
     position: relative;
     overflow: hidden;
     transition: 0.5s;
