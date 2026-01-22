@@ -1,0 +1,187 @@
+:root {
+    --sidebar-gap: 18rem; /* El espacio de tu sidebar fijo de la app */
+    --chat-bg: linear-gradient(135deg, #d3dedc 0%, #e2e9e8 100%);
+    --radius-main: 2.5rem;
+}
+
+body {
+    background-color: #f8fafb;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+/* CONTENEDOR AJUSTADO A LA DERECHA */
+.main-container {
+    margin-left: var(--sidebar-gap);
+    padding: 2rem 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.chat-interface {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* CARD PRINCIPAL */
+.main-card {
+    flex: 1;
+    display: flex;
+    background: white;
+    border-radius: var(--radius-main);
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* SIDEBAR DE CONTACTOS */
+.contacts-sidebar {
+    width: 25%;
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0 1.5rem 0;
+    background: white;
+    z-index: 5;
+}
+
+.contacts-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    gap: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-item.active {
+    background: var(--chat-bg);
+    margin-left: 1.5rem; /* El efecto de la imagen */
+    border-radius: 2.5rem 0 0 2.5rem;
+    box-shadow: -10px 0 20px rgba(0,0,0,0.02);
+}
+
+.contact-text .name { display: block; font-weight: 700; font-size: 0.95rem; }
+.contact-text .sub { font-size: 0.8rem; color: #999; }
+
+.sidebar-footer {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-top: auto; /* Empuja hacia abajo */
+    padding-top: 1rem;
+}
+
+/* ÁREA DE CONVERSACIÓN */
+.chat-area {
+    flex: 1;
+    background: var(--chat-bg);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding: 0.8rem 1.8rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.messages-body {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.message-row { display: flex; gap: 1rem; margin-bottom: 2rem; align-items: flex-end; }
+.message-row.sent { justify-content: flex-end; }
+
+.bubble {
+    padding: 0.8rem 1.4rem;
+    border-radius: 1.2rem;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    font-size: 0.9rem;
+}
+
+.img-preview {
+    width: 15rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 0.6rem;
+}
+.img-preview img { width: 100%; }
+
+/* INPUT Y BOTONES (COMO EN LA IMAGEN) */
+.chat-input-row {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.input-capsule {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.input-capsule input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.tool-btn {
+    border: none;
+    background: #e9eff0; /* Fondo gris suave de la imagen */
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.send-btn {
+    width: 3.8rem;
+    height: 3.8rem;
+    background: white;
+    border: none;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* AVATARES */
+.avatar-lg { width: 3.8rem; height: 3.8rem; border-radius: 50%; object-fit: cover; }
+.avatar-md { width: 2.8rem; height: 2.8rem; border-radius: 50%; }
+.avatar-xs { width: 1.8rem; height: 1.8rem; border-radius: 50%; }
+
+.status { font-size: 0.75rem; color: #8a9a9a; }
+.emoji-reaction { font-size: 2.8rem; }
