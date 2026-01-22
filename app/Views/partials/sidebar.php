@@ -4,7 +4,7 @@
   </div>
   <ul class="nav nav-pills flex-column mb-auto gap-3 fs-5 mt-5">
     <li class="nav-item">
-      <a href="#" class="nav-link p-2 active d-flex align-items-center gap-4 fs-6">
+      <a href="/" class="nav-link p-2 active d-flex align-items-center gap-4 fs-6">
 
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -16,7 +16,7 @@
     </li>
 
     <li>
-      <a href="#" class="nav-link p-2 d-flex align-items-center justify-content-between ">
+      <a href="/mensajes" class="nav-link p-2 d-flex align-items-center justify-content-between ">
         <div class="d-flex align-items-center gap-4 fs-6">
 
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
