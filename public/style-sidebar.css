@@ -1,6 +1,6 @@
 /* side-bar start */
 .sidebar {
-    width: 300px;
+    width: 16vw;
     background: #fff;
     height: 100vh;
     border-right: 1px solid #eee;
@@ -10,13 +10,12 @@
 }
 
 .sidebar .logo-img {
-    height: 40px;
-    width: auto;
+    width: 70%;
     object-fit: contain;
 }
 
 .sidebar .container-img {
-    height: 100px;
+    height: 15%;
 
 }
 
@@ -25,7 +24,7 @@
 
 .sidebar .nav-link {
     position: relative;
-    padding: 12px 16px;
+    
     color: #6c757d;
     border-radius: 14px;
     transition: all 0.25s ease;
@@ -88,11 +87,13 @@
         0 8px 20px rgba(147, 80, 186, 0.18),
         0 2px 4px rgba(0, 0, 0, 0.08);
 }
+
 /* enlinea start*/
 .online{
     color: #6c757d;
-    font-size: 18px;
+    font-size: 14px;
 }
+
 /* enlinea end */
 
 /* profile side-bar start*/
@@ -101,8 +102,8 @@
     border: 1px solid #ddd;
     border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 700px;
+    padding: 5px;
+    max-width: 100%;
     max-height: 500px;
     transition: all 0.3s ease;
 }   

@@ -1,7 +1,7 @@
 <div class="container-fluid d-flex justify-content-center">
-    <div class="menu-post p-4 d-flex flex-row">
+    <div class="menu-post p-3 d-flex flex-row">
         <div class="w-50 d-flex justify-content-end">
-            <h3 class="fw-bold">Posts</h3>
+            <h3 class="fw-bold fs-3">Posts</h3>
         </div>
         <div class="w-100 d-flex justify-content-center me-5">
             <div class="mini-menu ">
