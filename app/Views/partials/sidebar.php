@@ -15,20 +15,10 @@
       </a>
     </li>
 
-    <li>
-      <a href="/mensajes" class="nav-link p-2 d-flex align-items-center justify-content-between ">
-        <div class="d-flex align-items-center gap-4 fs-6">
-
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-          </svg>
-          Inicio
-        </a>
-      </li>
+    
 
       <li class="nav-item">
-        <a href="#" class="nav-link p-3 d-flex align-items-center justify-content-between">
+        <a href="/mensajes" class="nav-link p-3 d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center gap-3">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
