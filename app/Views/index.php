@@ -5,29 +5,42 @@
 <div class="">
     <div class="container-fluid main d-flex flex-column justify-content-center align-items-center">
         <!-- post1 -->
-        <div class="card card-post p-4 mt-5 gap-3 ">
+        <div class="card card-post p-4 mt-5 gap-2 ">
             <!-- Header del post -->
             <div class="d-flex flex-row gap-3 align-items-center">
                 <div>
                     <img src="img/post/profile_prueba.png" alt="profile" class="img-fluid rounded-circle profile-photo">
                 </div>
-                <div class="d-flex flex-column justify-content-center  mb-0">
+                <div class="d-flex flex-column justify-content-center">
                     <h5 class="mb-0 fw-bold fs-5">feid</h5>
                     <small class="text-muted small">hace 2 horas</small>
                 </div>
             </div>
 
             <!-- Texto del post -->
-            <p class="mb-3 text-post">
+            <p class="text-post">
                 XTHE ENDX EL PRINCIPIO DEL FIN 🖤 GRACIAS!!! a los que fueron a ver el docu a los cines!! Les abrimos las puertas de la casa, del corazón y les queríamos mostrar de qué estamos hechos ! En memoria a nuestros seres queridos a quienes soñaron con nosotros el vernos aquí desde hace tantos años , con mucho cariño 🫶 Adiós Ferxxo 💚 <!--  GRACIAS SEBAS @sebassanchezv GRACIAS GODIE @diegoptino Por hacer esta pieza tan especial para las personas que conectan conmigo 🫀⭐️ --> </p>
 
             <!-- Imágenes del post -->
-            <div class="d-flex flex-row gap-2 container-images overflow-hidden">
-                <div class="flex-shrink-0"><img src="img/post/feid1.png" class="img-fluid photo-post"></div>
-                <div class="flex-shrink-0"><img src="img/post/feid2.png" class="img-fluid photo-post"></div>
-                <div class="flex-shrink-0"><img src="img/post/feid3.png" class="img-fluid photo-post"></div>
-                <div class="flex-shrink-0"><img src="img/post/feid4.png" class="img-fluid photo-post"></div>
-
+            <div class="d-flex flex-row container-images overflow-x-auto mx-n4 px-4 pb-2" style="scrollbar-width: none; -ms-overflow-style: none;">
+                <div class="flex-shrink-0">
+                    <img src="img/post/feid1.png" class="photo-post">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="img/post/feid2.png" class="photo-post">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="img/post/feid3.png" class="photo-post">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="img/post/feid4.png" class="photo-post">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="img/post/feid4.png" class="photo-post">
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="img/post/feid4.png" class="photo-post">
+                </div>
             </div>
 
             <!-- Métricas del post -->

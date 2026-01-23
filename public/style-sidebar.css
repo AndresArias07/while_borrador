@@ -1,119 +1,93 @@
 /* side-bar start */
 .sidebar {
-    width: 16vw;
+    width: 15rem; /* Usar rem es más estable que vw para el ancho */
     background: #fff;
     height: 100vh;
-    border-right: 1px solid #eee;
-    padding: 1rem;
-    box-shadow: 4px 0 8px -2px rgba(0, 0, 0, 0.1);
+    border-right: 0.0625rem solid #eee;
+    padding: 1.25rem;
+    box-shadow: 0.25rem 0 0.5rem -0.125rem rgba(0, 0, 0, 0.1);
     z-index: 1200;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar .logo-img {
     width: 70%;
+    max-width: 10rem;
     object-fit: contain;
 }
 
 .sidebar .container-img {
-    height: 15%;
-
+    height: 10%; /* Bajé un poco el % para dar aire a la lista */
+    display: flex;
+    align-items: center;
 }
 
 /* Sidebar base */
-
-
 .sidebar .nav-link {
     position: relative;
-    
     color: #6c757d;
-    border-radius: 14px;
+    border-radius: 0.875rem; /* Relativo */
+    padding: 0.75rem 1rem;
     transition: all 0.25s ease;
+    font-size: 1rem;
 }
 
 .sidebar .nav-pills .nav-link.active {
-    /* vidrio */
     background: rgba(255, 255, 255, 0.65) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
     color: #212529 !important;
-
-    /* profundidad */
     box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
-
-    border-radius: 16px;
+        0 0.625rem 1.5625rem rgba(0, 0, 0, 0.08),
+        inset 0 0.0625rem 0 rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
 }
 
 .sidebar .nav-pills .nav-link.active::after {
     content: "";
     position: absolute;
-    left: -10px;
+    left: -0.625rem;
     top: 18%;
-    width: 4px;
+    width: 0.25rem;
     height: 64%;
     background: #9350ba;
-    border-radius: 4px;
-
+    border-radius: 0.25rem;
     box-shadow:
-        0 0 10px rgba(151, 47, 188, 0.7),
-        0 0 20px rgba(77, 4, 82, 0.35);
+        0 0 0.625rem rgba(151, 47, 188, 0.7),
+        0 0 1.25rem rgba(77, 4, 82, 0.35);
 }
 
-/* .sidebar .nav-link:hover {
-    background: rgba(147, 80, 186, 0.08);
-    color: #9350ba;
-    box-shadow:
-        0 4px 12px rgba(147, 80, 186, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4);
-    transform: translateX(4px);
-} */
-/* .sidebar .nav-link:hover {
-    background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    color: #9350ba;
-    box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5);
-    transform: translateX(3px);
-} */
 .sidebar .nav-link:hover {
     background: rgba(147, 80, 186, 0.12);
     color: #9350ba;
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
     box-shadow:
-        0 8px 20px rgba(147, 80, 186, 0.18),
-        0 2px 4px rgba(0, 0, 0, 0.08);
+        0 0.5rem 1.25rem rgba(147, 80, 186, 0.18),
+        0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
 }
 
 /* enlinea start*/
-.online{
+.online {
     color: #6c757d;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px -> 0.875rem */
 }
-
-/* enlinea end */
 
 /* profile side-bar start*/
-.profile-sidebar{
+.profile-sidebar {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    max-width: 100%;
-    max-height: 500px;
+    border: 0.0625rem solid #ddd;
+    border-radius: 3.125rem; /* 50px */
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+    padding: 0.3125rem 0.625rem;
+    width: 100%;
     transition: all 0.3s ease;
-}   
-.profile-sidebar:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    margin-top: auto; /* Empuja el perfil al fondo si usas flex-column */
 }
 
-
-/* profile side-bar end */
-
+.profile-sidebar:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.18);
+}
 
 /* side-bar end  */

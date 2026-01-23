@@ -1,4 +1,4 @@
-<div class="container sugerencia p-4">
+<div class="container sugerencia p-3">
 
   <!-- Título -->
   <h2 class="text-center fw-bold mb-4">Sugerencia</h2>

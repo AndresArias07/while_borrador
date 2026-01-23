@@ -6,23 +6,23 @@
 .main {
     margin-top: 95px;
     position: absolute;
-    
+
 }
 
 
 .profile-photo {
-    width: 55px;
+    width: 3rem;
 }
 
 .card-post {
     background-color: #fff;
     border: 0.0625rem solid #ddd;
-    border-radius: 2.5rem;      
-    padding: 1.25rem;            
-    max-width: 90%;  
-    margin-right: 9.6875rem;     
-    width: 37.5rem;             
-    max-height: 28.125rem;       
+    border-radius: 2.5rem;
+    padding: 1.25rem;
+    max-width: 90%;
+    margin-right: 9.6875rem;
+    width: 37.5rem;
+    height: auto;
     box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
@@ -32,24 +32,44 @@
 }
 
 .card-post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .text-post {
-    font-size: 12px;
+    font-size: 0.8rem;
     color: rgb(101, 101, 101);
     overflow: hidden;
 }
-.container-images{
-    height: 185px
+
+.container-images {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    cursor: grab;
+    user-select: none;
+    display: flex !important;
+    /* Asegura que estén en línea */
+    flex-wrap: nowrap !important;
+    /* Evita que las fotos bajen a otra fila */
+    overflow-x: auto;
+    /* Permite el scroll aunque sea invisible */
+    -webkit-overflow-scrolling: touch;
 }
+
 .photo-post {
-    border-radius: 1rem; 
-    border: 1px solid gray; 
-    width: 8.2rem;
-    height: auto; 
-    object-fit: cover;   
+    width: 13rem;
+    object-fit: cover;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(to bottom, #717171, #2b2b2b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    scroll-behavior: smooth;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    pointer-events: none;
+    
 }
 
 /* Iconos */
@@ -308,11 +328,11 @@
     width: 400px;
     padding: 15px 15px 0px 30px;
     border-radius: 20px 0 0 0;
-    box-shadow: -5px -5px 12px rgba(0, 0, 0, 0.2); 
+    box-shadow: -5px -5px 12px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
-.title-history{
+.title-history {
     font-weight: bold;
 }
 
@@ -329,11 +349,11 @@
 
 .historia-card:hover {
     cursor: pointer;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
 }
 
 
-.image-history{
+.image-history {
     width: 100%;
     height: 100%;
 }
@@ -354,16 +374,18 @@
 .historia-card:hover .perfil {
     width: 50px;
     height: 50px;
-    top: 5px;   /* Ajuste opcional */
-    left: 5px;  /* Ajuste opcional */
+    top: 5px;
+    /* Ajuste opcional */
+    left: 5px;
+    /* Ajuste opcional */
 }
 
 
 .perfil img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    object-fit: cover; 
-    border-radius: 50%; 
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .ver-btn {
@@ -384,5 +406,6 @@
     align-self: center;
     cursor: pointer;
 }
+
 
 /*end sidebar-history*/
