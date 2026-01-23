@@ -2,13 +2,26 @@
   <div class="container-fluid d-flex container-img align-items-center">
     <img src="<?= base_url('img/logo-while/while.png') ?>" alt="logo-while" class="img-fluid logo-img">
   </div>
-  <div class="d-flex flex-column justify-content-center flex-grow-1">
-    <ul class="nav nav-pills flex-column gap-2 fs-6">
-      <li class="nav-item">
-        <a href="#" class="nav-link p-3 active d-flex align-items-center gap-3">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 11.5L12 4L21 11.5" />
-            <path d="M5.5 10.5V20H18.5V10.5" />
+  <ul class="nav nav-pills flex-column mb-auto gap-3 fs-5 mt-5">
+    <li class="nav-item">
+      <a href="/" class="nav-link p-2 active d-flex align-items-center gap-4 fs-6">
+
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 11.5L12 4L21 11.5" />
+          <path d="M5.5 10.5V20H18.5V10.5" />
+        </svg>
+        Inicio
+      </a>
+    </li>
+
+    <li>
+      <a href="/mensajes" class="nav-link p-2 d-flex align-items-center justify-content-between ">
+        <div class="d-flex align-items-center gap-4 fs-6">
+
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
           Inicio
         </a>
